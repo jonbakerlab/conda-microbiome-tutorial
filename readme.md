@@ -9,7 +9,7 @@ Bioinformatics involves the application of computational methods and tools to an
 
 - **Mamba**: Mamba is a reimplementation of the Conda package manager in C++. It aims to be a faster and more efficient alternative to Conda, especially when dealing with large dependency graphs or when performing operations like environment resolution and package installation.
 
-## Why Use Conda or Mamba?
+## Why Use Conda and Mamba?
 
 1. **Ease of Installation**: Conda and Mamba simplify the installation of bioinformatics software. Many bioinformatics tools and libraries are available as Conda packages, which can be installed with a single command. This eliminates the need for manual dependency resolution and reduces the chances of installation errors.
 
