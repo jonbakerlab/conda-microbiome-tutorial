@@ -21,7 +21,16 @@ Bioinformatics involves the application of computational methods and tools to an
 
 ## Installing Conda/Mamba
 
-1. **Miniforge**: Miniforge is a minimal installer for Mamba and Conda. It includes Mamba, Conda, Python, and other essential packages needed for these to function. You can download it from [Miniforge website](https://github.com/conda-forge/miniforge) and install it using the instructions provided for your platform (e.g., Mac, Windows, Linux).
+**Miniforge**: Miniforge is a minimal installer for Mamba and Conda. It includes Mamba, Conda, Python, and other essential packages needed for these to function. You can download it from [Miniforge website](https://github.com/conda-forge/miniforge) and install it using the instructions provided for your platform (e.g., Mac, Windows, Linux).
+
+**OR** 
+
+install using the code here (Mac OS & Linux only):
+
+```bash
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
 
 
 ## Using Conda and Mamba
