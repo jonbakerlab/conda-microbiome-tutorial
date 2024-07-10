@@ -1,4 +1,5 @@
 # Introduction to Conda and Mamba
+Bioinformatics involves the application of computational methods and tools to analyze biological data. Managing software dependencies and environments is crucial in bioinformatics to ensure reproducibility, manage complex dependencies, and facilitate collaboration. Mamba and Conda are powerful tools that address these needs effectively.
 
 ## What are Conda and Mamba?
 
