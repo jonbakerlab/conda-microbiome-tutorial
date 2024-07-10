@@ -97,7 +97,7 @@ mamba env export > bioinfo_env.yml
 ```
 
 ## Example of running a tool in a conda environment
-An example command using a bioinformatics tool to generate a visual output. We'll use `matplotlib`, which is a popular plotting library in Python often used in bioinformatics for visualizing data.
+An example command using a bioinformatics tool to generate a visual output. We'll use `seaborn`, which is a popular plotting library in Python often used in bioinformatics for visualizing data.
 
 ```bash
 # Activate your bioinformatics environment (assuming it's already created)
