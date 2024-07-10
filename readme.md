@@ -1,3 +1,37 @@
+# Basics of GitHub and Git
+
+## Introduction
+
+**Git** is a distributed version control system that allows multiple developers to collaborate on projects and track changes to files over time. **GitHub** is a platform built around Git that provides additional features such as hosting repositories online, collaboration tools, and version control.
+
+## Key Concepts
+
+### 1. Version Control
+
+Version control is the management of changes to documents, computer programs, large web sites, and other collections of information. It allows teams to:
+
+- Track modifications: See who changed what, when, and why.
+- Revert changes: Roll back to a previous version if needed.
+- Maintain consistency: Ensure everyone is working on the latest version of files.
+
+### 2. Git
+
+Git is a distributed version control system designed for speed and efficiency. It operates locally on your computer, making it fast and capable of handling both small and large projects effectively. Key features of Git include:
+
+- **Snapshots**: Git captures a snapshot of your files whenever a change is made, rather than storing incremental differences.
+- **Branching and Merging**: Git allows for branching (creating separate lines of development) and merging branches back together. This enables parallel development and feature isolation.
+- **Distributed Development**: Each developer has a complete copy of the repository, including its full history. This allows work to continue offline and facilitates collaboration.
+
+### 3. GitHub
+
+GitHub enhances Git by providing a centralized platform for collaboration and project management. Key features of GitHub include:
+
+- **Hosting Repositories**: GitHub hosts your Git repositories in the cloud, making it accessible from anywhere with an internet connection.
+- **Pull Requests**: Developers can propose changes (pull requests) and discuss them before merging into the main branch.
+- **Issue Tracking**: GitHub provides tools for issue tracking, allowing teams to manage tasks, bugs, and feature requests.
+- **Collaboration**: GitHub facilitates collaboration through features like code reviews, project wikis, and team management.
+
+
 # Introduction to Conda and Mamba
 Bioinformatics involves the application of computational methods and tools to analyze biological data. Managing software dependencies and environments is crucial in bioinformatics to ensure reproducibility, manage complex dependencies, and facilitate collaboration. Mamba and Conda are powerful tools that address these needs effectively.
 
