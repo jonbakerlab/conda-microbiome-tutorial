@@ -61,7 +61,7 @@ Install a package in the active environment
 
 ```bash
 conda activate bioinfo_env
-mamba install -c bioconda bowtie2 samtools
+mamba install -c bioconda bowtie2 samtools seaborn
 ```
 
 ### Managing Packages
@@ -77,7 +77,7 @@ mamba remove scipy
 ### Searching for Packages
 Search for packages
 ```bash
-mamba search seaborn
+mamba search r
 ```
 
 ### Sharing Environments
@@ -94,39 +94,49 @@ An example command using a bioinformatics tool to generate a visual output. We'l
 # Activate your bioinformatics environment (assuming it's already created)
 conda activate bioinfo_env
 
-# Create a Python script (e.g., plot_data.py) to generate a plot
-# Here's a simple example script that generates a scatter plot:
+# Create a Python script (e.g., microbiome_heatmap.py) to generate a heatmap
+# Here's a script that simulates microbiome data and creates a heatmap:
 
 echo '
 import matplotlib.pyplot as plt
+import seaborn as sns
 import numpy as np
 
-# Generate some example data
-x = np.random.rand(100)
-y = np.random.rand(100)
-sizes = np.random.rand(100) * 100
+# Simulate microbiome data (relative abundance of microbial species across samples)
+# Example data: 10 samples (x-axis) and 5 microbial species (y-axis)
+num_samples = 10
+num_species = 5
 
-# Create scatter plot
-plt.figure(figsize=(8, 6))
-plt.scatter(x, y, s=sizes, alpha=0.5)
-plt.title("Example Scatter Plot")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.grid(True)
-plt.savefig("scatter_plot.png")  # Save the plot as scatter_plot.png
+# Generate random data representing relative abundance (%)
+data = np.random.rand(num_samples, num_species) * 100
+
+# Create heatmap using seaborn
+plt.figure(figsize=(10, 6))
+sns.heatmap(data, annot=True, cmap="YlGnBu", cbar=True)
+
+plt.title("Microbiome Data: Heatmap of Relative Abundance")
+plt.xlabel("Microbial Species")
+plt.ylabel("Sample")
+plt.xticks(np.arange(num_species) + 0.5, [f"Species {i+1}" for i in range(num_species)])
+plt.yticks(np.arange(num_samples) + 0.5, [f"Sample {i+1}" for i in range(num_samples)], rotation=0)
+plt.tight_layout()
+
+# Save the plot as microbiome_heatmap.png
+plt.savefig("microbiome_heatmap.png")
 plt.show()
-' > plot_data.py
+' > microbiome_heatmap.py
 
-# Run the script to generate the plot
-python plot_data.py
+# Run the script to generate the heatmap
+python microbiome_heatmap.py
 ```
 Explanation of the commands:
-- `conda activate bioinfo_env`: Activates the Conda environment `bioinfo_env` where `matplotlib` is installed.
-- `conda install matplotlib`: Installs `matplotlib` if it's not already installed in the active environment.
-- `echo '...' > plot_data.py`: Creates a Python script named `plot_data.py` with Python code to generate a scatter plot using `matplotlib`.
-- `python plot_data.py`: Executes the Python script, which generates a scatter plot and saves it as `scatter_plot.png`.
+- `conda activate bioinfo_env`: Activates the Conda environment `bioinfo_env` where `seaborn` is installed.
+- **Heatmap (`microbiome_heatmap.py`)**:
+   - Uses `seaborn` to create a heatmap of microbiome data.
+   - Simulated data represents relative abundance of microbial species across samples.
+   - Colors in the heatmap represent the abundance levels, with annotations showing exact values. 
 
-After running these commands, you should have a file named `scatter_plot.png` in your current directory, which is a visual output created using `matplotlib` within the bioinformatics environment managed by Conda.
+After running these commands, you should have a file named `microbiome_heatmap.png` in your current directory, which is a visual output created using `seaborn` within the bioinformatics environment managed by Conda.
 
 ## Conclusion
 
