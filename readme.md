@@ -3,7 +3,7 @@ Bioinformatics involves the application of computational methods and tools to an
 
 ## What are Conda and Mamba?
 
-**Conda** and **Mamba** are package and environment managers for the Python programming language (and other languages). They facilitate the installation, management, and deployment of software packages and environments.
+**Conda** and **Mamba** are package and environment managers for the Python programming language (and other languages like R). They facilitate the installation, management, and deployment of software packages and environments.
 
 - **Conda**: Conda is an open-source package management system and environment management system that runs on Windows, macOS, and Linux. It quickly installs, runs, and updates packages and their dependencies. Conda also creates, saves, loads, and switches between environments on your local computer.
 
